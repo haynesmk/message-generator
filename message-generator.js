@@ -4,3 +4,9 @@ const nouns = ["drawing","procedure","preparation","problem","uncle","queen","su
 
 const verbs = ["bow","persist","sleep","discharge","supervise","pick","owe","cut","struggle","explore","kick","tuck","greet","administer","last"];
 
+let phrase = phrases[Math.floor(Math.random()*phrases.length)];
+let noun = nouns[Math.floor(Math.random()*nouns.length)];
+let verb = verbs[Math.floor(Math.random()*verbs.length)];
+
+phrase = (phrase.replace('NNN', noun)).replace('VVV', verb);
+console.log(phrase);
